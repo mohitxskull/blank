@@ -1,0 +1,7 @@
+* {
+  user-select: none;
+
+  /* scrollbar hidden */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
