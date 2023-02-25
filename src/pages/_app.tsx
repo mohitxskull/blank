@@ -9,6 +9,7 @@ import { NotificationsProvider } from '@mantine/notifications';
 import PhotoViewerModal from '@/component/modals/photo.viewer';
 
 import '../styles/world.css';
+import ltrCache from '@/lib/ltr.cache';
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
@@ -25,6 +26,7 @@ export default function App(props: AppProps) {
 
       <WorldProvider>
         <MantineProvider
+          emotionCache={ltrCache}
           withGlobalStyles
           withNormalizeCSS
           theme={{
